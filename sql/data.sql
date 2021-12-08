@@ -1,0 +1,38 @@
+use db_blog;
+insert into user (first_name, last_name, email, password, role) values ('Godiva', 'Reeve', 'admin@gmail.com', 'admin', 0);
+insert into user (first_name, last_name, email, password, role) values ('Keelia', 'Exer', 'user1@gmail.com', 'pass', 1);
+insert into user (first_name, last_name, email, password, role) values ('Hally', 'Bonds', 'user2@gmail.com', 'pass', 1);
+insert into user (first_name, last_name, email, password, role) values ('Meg', 'Bodycombe', 'user3@gmail.com', 'pass', 1);
+insert into user (first_name, last_name, email, password, role) values ('Waldo', 'Cullagh', 'user4@gmail.com', 'pass', 1);
+
+insert into post (text, user_id, date_and_time, rating, approved) values ('Aenean fermentum.', 5, '2019-05-05 10:51:20', 0, 1);
+insert into post (text, user_id, date_and_time, rating, approved) values ('Maecenas tincidunt lacus at velit.', 3, '2019-01-18 12:01:59', 0, 0);
+insert into post (text, user_id, date_and_time, rating, approved) values ('Pellentesque ultrices mattis odio.', 4, '2019-04-25 09:01:39', 0, 0);
+insert into post (text, user_id, date_and_time, rating, approved) values ('Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est.', 2, '2019-01-27 04:02:23', 0, 0);
+insert into post (text, user_id, date_and_time, rating, approved) values ('Ut tellus.', 3, '2019-01-22 10:17:58', 0, 1);
+insert into post (text, user_id, date_and_time, rating, approved) values ('Nunc nisl.', 2, '2019-01-17 09:50:29', 0, 1);
+insert into post (text, user_id, date_and_time, rating, approved) values ('Cras in purus eu magna vulputate luctus.', 4, '2019-04-17 05:03:21', 0, 0);
+insert into post (text, user_id, date_and_time, rating, approved) values ('Sed ante.', 3, '2019-04-10 20:08:02', 0, 1);
+insert into post (text, user_id, date_and_time, rating, approved) values ('Proin at turpis a pede posuere nonummy.', 3, '2019-03-25 21:07:59', 0, 0);
+insert into post (text, user_id, date_and_time, rating, approved) values ('Donec dapibus.', 2, '2019-03-31 04:16:09', 0, 1);
+
+insert into comment (comment_text, date_and_time, post_id, user_id) values ('Integer tincidunt ante vel ipsum.', '2019-06-06 04:12:34', 1, 5);
+insert into comment (comment_text, date_and_time, post_id, user_id) values ('In est risus, auctor sed, tristique in, tempus sit amet, sem.', '2019-06-09 04:14:59', 6, 4);
+insert into comment (comment_text, date_and_time, post_id, user_id) values ('Curabitur gravida nisi at nibh.', '2019-06-06 06:27:34', 8, 5);
+insert into comment (comment_text, date_and_time, post_id, user_id) values ('Integer tincidunt ante vel ipsum.', '2019-06-08 13:16:49', 8, 2);
+insert into comment (comment_text, date_and_time, post_id, user_id) values ('Pellentesque viverra pede ac diam.', '2019-06-09 06:58:35', 10, 4);
+insert into comment (comment_text, date_and_time, post_id, user_id) values ('Vivamus in felis eu sapien cursus vestibulum.', '2019-06-08 18:58:09', 5, 3);
+insert into comment (comment_text, date_and_time, post_id, user_id) values ('Pellentesque eget nunc.', '2019-06-09 06:44:22', 10, 5);
+insert into comment (comment_text, date_and_time, post_id, user_id) values ('Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc.', '2019-06-07 08:55:22', 8, 2);
+insert into comment (comment_text, date_and_time, post_id, user_id) values ('Suspendisse accumsan tortor quis turpis.', '2019-06-09 03:25:15', 10, 2);
+insert into comment (comment_text, date_and_time, post_id, user_id) values ('Aliquam sit amet diam in magna bibendum imperdiet.', '2019-06-08 00:44:57', 1, 4);
+insert into comment (comment_text, date_and_time, post_id, user_id) values ('Nulla mollis molestie lorem.', '2019-06-08 20:25:47', 6, 2);
+insert into comment (comment_text, date_and_time, post_id, user_id) values ('Suspendisse ornare consequat lectus.', '2019-06-09 06:52:25', 1, 3);
+insert into comment (comment_text, date_and_time, post_id, user_id) values ('Vivamus vel nulla eget eros elementum pellentesque.', '2019-06-08 15:09:01', 5, 4);
+insert into comment (comment_text, date_and_time, post_id, user_id) values ('Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.', '2019-06-07 12:55:39', 1, 3);
+insert into comment (comment_text, date_and_time, post_id, user_id) values ('Phasellus id sapien in sapien iaculis congue.', '2019-06-06 23:20:22', 1, 2);
+insert into comment (comment_text, date_and_time, post_id, user_id) values ('Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.', '2019-06-07 02:44:02', 8, 4);
+insert into comment (comment_text, date_and_time, post_id, user_id) values ('Cras non velit nec nisi vulputate nonummy.', '2019-06-08 08:25:07', 10, 2);
+insert into comment (comment_text, date_and_time, post_id, user_id) values ('Maecenas rhoncus aliquam lacus.', '2019-06-07 09:31:23', 5, 4);
+insert into comment (comment_text, date_and_time, post_id, user_id) values ('Maecenas ut massa quis augue luctus tincidunt.', '2019-06-06 21:27:57', 8, 5);
+insert into comment (comment_text, date_and_time, post_id, user_id) values ('Nulla suscipit ligula in lacus.', '2019-06-09 05:18:35', 10, 4);
